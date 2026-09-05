@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Mahaveer Enterprises</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+        /* ================= PROJECTS ================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            background: #eeeeee;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.45s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.06);
+        }
+
+        .project-content {
+            padding: 22px;
+        }
+
+        .project-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-bottom: 10px;
+        }
+
+        .project-content h3 {
+            margin: 0 0 9px;
+            font-size: 19px;
+            line-height: 1.35;
+            color: #222;
+        }
+
+        .project-content p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+
+        /* ================= PROJECT INTRO ================= */
+
+        .project-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        /* ================= CAPABILITIES ================= */
+
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .capability-card {
+            padding: 28px 24px;
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+            text-align: center;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        .capability-card h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .capability-card p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+
+        /* ================= CTA ================= */
+
+        .project-cta {
+            margin-top: 55px;
+            padding: 50px 25px;
+            text-align: center;
+            border-radius: 16px;
+            background: #f7f7f7;
+            border: 1px solid #eeeeee;
+        }
+
+        .project-cta h2 {
+            margin-bottom: 12px;
+        }
+
+        .project-cta p {
+            max-width: 700px;
+            margin: 0 auto 22px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .project-cta a {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1000px) {
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .capability-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .project-image {
+                height: 250px;
+            }
+
+            .project-content {
+                padding: 20px;
+            }
+
+            .capability-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .project-cta {
+                margin-top: 40px;
+                padding: 38px 18px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container nav">
+
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Mahaveer Enterprises">
+            </a>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="clients.html">Clients</a>
+
+                <a href="contact.html" class="nav-cta">
+                    Get a Quote
+                </a>
+
+            </nav>
+
+            <button class="menu" onclick="toggleMenu()">☰</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="kicker">
+                Our Work
+            </div>
+
+            <h1>
+                Our Projects
+            </h1>
+
+            <p>
+                A showcase of selected construction, civil, fabrication,
+                industrial, modular, interior and site development works
+                executed by Mahaveer Enterprises.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECT PORTFOLIO ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-head project-intro">
+
+                <div class="kicker">
+                    Project Portfolio
+                </div>
+
+                <h2>
+                    Selected Works
+                </h2>
+
+                <p>
+                    Explore some of our completed work and project activities
+                    across civil construction, fabrication, industrial works,
+                    modular structures, interiors and site development.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 01 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-01.jpg"
+                            alt="Retaining Wall Construction">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Civil Construction
+                        </span>
+
+                        <h3>
+                            Retaining Wall Construction
+                        </h3>
+
+                        <p>
+                            Retaining wall and structural civil work carried
+                            out with site-level execution and finishing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 02 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-02.jpg"
+                            alt="Garden Gazebo and Landscaping">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Civil & Landscaping
+                        </span>
+
+                        <h3>
+                            Garden Gazebo & Landscaping
+                        </h3>
+
+                        <p>
+                            Outdoor gazebo structure with surrounding
+                            landscaping and site finishing work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 03 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-03.jpg"
+                            alt="Custom Metal Fabrication">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Fabrication
+                        </span>
+
+                        <h3>
+                            Custom Metal Fabrication
+                        </h3>
+
+                        <p>
+                            Custom metal fabrication work involving
+                            fabricated structures and finishing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 04 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-04.jpg"
+                            alt="Metal Fabrication Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Fabrication
+                        </span>
+
+                        <h3>
+                            Metal Fabrication Work
+                        </h3>
+
+                        <p>
+                            Fabrication and assembly work for custom
+                            metal structures and site requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 05 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-05.jpg"
+                            alt="Drainage and Civil Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Civil Work
+                        </span>
+
+                        <h3>
+                            Drainage & Civil Work
+                        </h3>
+
+                        <p>
+                            Site drainage and associated civil work executed
+                            for practical site development requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 06 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-06.jpg"
+                            alt="Drainage and Site Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Site Development
+                        </span>
+
+                        <h3>
+                            Drainage & Site Development
+                        </h3>
+
+                        <p>
+                            Drainage-related site work and construction
+                            activities carried out at project site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 07 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-07.jpg"
+                            alt="Security Cabin">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Modular Works
+                        </span>
+
+                        <h3>
+                            Security Cabin
+                        </h3>
+
+                        <p>
+                            Portable security cabin solution suitable for
+                            industrial, commercial and site requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 08 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-08.jpg"
+                            alt="Security Cabin Installation">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Modular Works
+                        </span>
+
+                        <h3>
+                            Security Cabin Installation
+                        </h3>
+
+                        <p>
+                            Modular security cabin installation and
+                            site placement work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 09 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-09.jpg"
+                            alt="Office Partition Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Interior Works
+                        </span>
+
+                        <h3>
+                            Office Partition Work
+                        </h3>
+
+                        <p>
+                            Office partition installation and interior
+                            space division work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 10 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-10.jpg"
+                            alt="Office Partition and Interior Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Interior Works
+                        </span>
+
+                        <h3>
+                            Office Partition & Interior Work
+                        </h3>
+
+                        <p>
+                            Partition and interior execution for functional
+                            office spaces.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 11 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-11.jpg"
+                            alt="Water Tank and Plumbing Work">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Plumbing
+                        </span>
+
+                        <h3>
+                            Water Tank & Plumbing Work
+                        </h3>
+
+                        <p>
+                            Water storage and plumbing-related installation
+                            work for site requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 12 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-12.jpg"
+                            alt="Decorative Fountain Installation">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Installation Work
+                        </span>
+
+                        <h3>
+                            Decorative Fountain Installation
+                        </h3>
+
+                        <p>
+                            Decorative fountain installation and associated
+                            water-feature work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 13 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-13.jpg"
+                            alt="Fountain Construction">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Civil & Installation
+                        </span>
+
+                        <h3>
+                            Fountain Construction
+                        </h3>
+
+                        <p>
+                            Decorative fountain structure and finishing work
+                            for an outdoor installation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 14 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-14.jpg"
+                            alt="Modular Building Construction">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Modular Construction
+                        </span>
+
+                        <h3>
+                            Modular Building Construction
+                        </h3>
+
+                        <p>
+                            Modular building structure and container-based
+                            construction solution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 15 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-15.jpg"
+                            alt="Portable Cabin">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Portable Cabin
+                        </span>
+
+                        <h3>
+                            Portable Cabin
+                        </h3>
+
+                        <p>
+                            Portable cabin solution designed for practical
+                            site and commercial requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 16 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-16.jpg"
+                            alt="Modular Toilet Interior">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Modular Works
+                        </span>
+
+                        <h3>
+                            Modular Toilet Interior
+                        </h3>
+
+                        <p>
+                            Modular toilet interior with internal finishing
+                            and utility provisions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 17 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-17.jpg"
+                            alt="Modular Office Interior">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Interior Works
+                        </span>
+
+                        <h3>
+                            Modular Office Interior
+                        </h3>
+
+                        <p>
+                            Modular office interior setup with functional
+                            space planning and finishing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 18 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-18.jpg"
+                            alt="Industrial Interior Finishing">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Industrial Works
+                        </span>
+
+                        <h3>
+                            Industrial Interior Finishing
+                        </h3>
+
+                        <p>
+                            Interior finishing and site work carried out
+                            within an industrial facility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 19 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-19.jpg"
+                            alt="Garden Gazebo Project">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Outdoor Works
+                        </span>
+
+                        <h3>
+                            Garden Gazebo Project
+                        </h3>
+
+                        <p>
+                            Outdoor gazebo and surrounding landscape
+                            development work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 20 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/gallery/project-20.jpg"
+                            alt="Gazebo and Landscaping Project">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Landscaping
+                        </span>
+
+                        <h3>
+                            Gazebo & Landscaping Project
+                        </h3>
+
+                        <p>
+                            Gazebo structure with landscaping and outdoor
+                            finishing work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= CAPABILITIES ================= -->
+
+            <div class="project-cta">
+
+                <div class="kicker">
+                    What We Deliver
+                </div>
+
+                <h2>
+                    Complete Project Execution
+                </h2>
+
+                <p>
+                    From civil construction and fabrication to modular
+                    structures, interiors, plumbing and industrial site
+                    works, Mahaveer Enterprises provides practical solutions
+                    with professional execution.
+                </p>
+
+                <a href="contact.html" class="nav-cta">
+                    Start Your Project
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <div class="footer-title">
+                    MAHAVEER ENTERPRISES
+                </div>
+
+                <p>
+                    Building Trust. Delivering Excellence.
+                </p>
+                <p style="margin-top:8px">Construction, industrial and engineering solutions since 2006. We combine practical experience, 
+                    skilled execution and professional project management to deliver reliable, quality-focused solutions for residential, 
+                    commercial and industrial requirements.</p>
+
+            </div>
+
+
+            <div>
+
+                <div class="footer-title">
+                    Quick Links
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="footer-title">Contact</div>
+                <div class="footer-links"><a href="tel:+917030799252">7030799252</a><a
+                        href="tel:+917066475000">7066475000</a><a href="tel:+917066485000">7066485000</a><a
+                        href="mailto:mahaveerenterprises.co@gmail.com">mahaveerenterprises.co@gmail.com</a><span>Shop
+                        No. 14, Majestic Square, Ghotawade Phata, Pirangut, Pune, Maharashtra</span></div>
+            </div>
+        </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            © 2026 Mahaveer Enterprises. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
