@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mahaveer Enterprises</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a class="brand" href="index.html"><img src="assets/logo.png"
+                    alt="Mahaveer Enterprises"></a>
+            <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a
+                    href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a
+                    href="clients.html">Clients</a><a href="contact.html" class="nav-cta">Get a Quote</a></nav><button
+                class="menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <div class="kicker">Let's Work Together</div>
+            <h1>Contact Us</h1>
+            <p>Tell us about your project and select the service you need. We will route the enquiry with the right
+                context.</p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container contact-wrap">
+            <div>
+                <div class="kicker">Get in Touch</div>
+                <h2>Have a project in mind?</h2>
+                <p>Contact Mahaveer Enterprises for project requirements, quotations and site work discussions.</p>
+                <div class="contact-list">
+                    <div class="contact-item"><span>Call</span><a href="tel:+917030799252">7030799252</a> · <a
+                            href="tel:+917066475000">7066475000</a> · <a href="tel:+917066485000">7066485000</a></div>
+                    <div class="contact-item"><span>WhatsApp</span><a href="https://wa.me/917030799252"
+                            target="_blank">Chat on WhatsApp</a></div>
+                    <div class="contact-item"><span>Email</span><a
+                            href="mailto:mahaveerenterprises.co@gmail.com">mahaveerenterprises.co@gmail.com</a> | <a
+                            href="mailto:info@mahaveers.co.in">info@mahaveers.co.in</a></div>
+                    <div class="contact-item"><span>Office</span>Shop No. 14, Majestic Square, Ghotawade Phata,
+                        Pirangut, Pune, Maharashtra</div>
+                </div>
+            </div>
+            <form onsubmit="sendWhatsApp(event)">
+                <h3 style="color:#082b52;font-size:24px;margin-bottom:18px">Request a Quote</h3><label>Name
+                    *</label><input id="name" required placeholder="Your name"><label>Company Name</label><input
+                    id="company" placeholder="Company name"><label>Phone Number *</label><input id="phone" required
+                    placeholder="Your phone number"><label>Service Required *</label><select id="service" required>
+                    <option value="">Select a service</option>
+                    <option>Civil Construction</option>
+                    <option>Building Construction</option>
+                    <option>Repair & Maintenance</option>
+                    <option>Fabrication & Installation</option>
+                    <option>Electrical Works</option>
+                    <option>Plumbing & Piping</option>
+                    <option>Industrial Works & Labour Supply</option>
+                    <option>Interior & Furniture</option>
+                    <option>Waterproofing</option>
+                    <option>Project Management & Site Supervision</option>
+                    <option>Commercial & Institutional Projects</option>
+                    <option>Other</option>
+                </select><label>Project Location</label><input id="location"
+                    placeholder="Project location"><label>Project Requirement *</label><textarea id="message" required
+                    placeholder="Tell us about your work requirement..."></textarea><button class="btn btn-gold"
+                    type="submit">Send Enquiry on WhatsApp</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-head">
+                <div class="kicker">Find Us</div>
+                <h2>Our Office</h2>
+            </div>
+            <div class="map"><iframe
+                    src="https://www.google.com/maps?q=Ghotawade%20Phata%2C%20Pirangut%2C%20Pune%2C%20Maharashtra&output=embed"
+                    loading="lazy"></iframe></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container copyright">© 2026 Mahaveer Enterprises. All Rights Reserved.</div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
